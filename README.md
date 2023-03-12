@@ -36,3 +36,25 @@ Es una técnica que me permitio predecir los precios, para modelar la relación 
 
 Con respecto al rendimiento, en las primeras predicciones los valores eran muy muy altos, entonces loq que se hizo fue tomas mas variables y datos para llegar a una prediccion mas acertada, el comportamiento.
 
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+Entorno WIndows
+
+## instalar python windows
+
+1. Descargue el instalador del archivo ejecutable de Python 3.7 para Windows x86-64 desde la página de descargas de Python.org.
+
+2. Ejecute el instalador.
+
+3. Elija Add Python 3.7 to PATH (Añadir Python 3.7 a PATH).
+
+4. Seleccione Install Now (Instalar ahora).
+
+## instalar spark
+
+1. Instalar JDK 8.2
+
+2. Descargar Spark y descomprimir el archivo.
+
+3. Descargar los binarios de Hadoop para Windows.
+
+4. Extraer el archivo winutils.exe a una carpeta, y dentro de la misma tener una subcarpeta /bin, dónde se va a ubicar el archivo.
