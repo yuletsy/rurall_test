@@ -1,6 +1,6 @@
 # rurall_test
 
-## Entorno Linux 
+### Entorno Linux 
 git clone https://github.com/yuletsy/rurall_test.git
 
 Abrir en vscode
