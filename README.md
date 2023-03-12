@@ -1,6 +1,6 @@
 # rurall_test
 
-### Como deben correr el codigo
+### 1. Como deben correr el codigo
 1. git clone https://github.com/yuletsy/rurall_test.git
 
 2. Abrir en vscode
