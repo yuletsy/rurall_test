@@ -6,8 +6,8 @@
 2. Abrir en vscode
 
 3. instalar python o verificar version de python
-   sudo apt-get install python3.7
 
+   sudo apt-get install python3.7
    python3 --version
 
 4. Instalar pyspark
