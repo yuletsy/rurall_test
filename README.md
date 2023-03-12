@@ -1,25 +1,24 @@
 # rurall_test
 
 ### Entorno Linux 
-git clone https://github.com/yuletsy/rurall_test.git
+1. git clone https://github.com/yuletsy/rurall_test.git
 
-Abrir en vscode
+2. Abrir en vscode
 
-instalar python 
-sudo apt-get install python3.7
+3. instalar python o verificar version de python
+   sudo apt-get install python3.7
 
-verificar la version de python 
-python3 --version
+   python3 --version
 
-INstalar pyspark
-sudo pip3 install pyspark
+4. Instalar pyspark
+   sudo pip3 install pyspark
 
-verificar version de pyspark
-pyspark --version
+5. Verificar version de pyspark
+   pyspark --version
+   
+6. instalar librerias correspondientes
 
-instalar librerias correspondientes
-
-Correr el archivo 
-python3 final.py
+7. Correr el archivo 
+   python3 final.py
 
 Automaticamente se crea un archivo llamado price_prediction.csv donde esta el resultado
