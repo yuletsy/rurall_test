@@ -1,3 +1,4 @@
+# BY: YULETSY PAOLA PABON --- 2023 -- MARZO
 # se importan los paquetes necesarios para la regresión lineal
 import pyspark
 import datetime
@@ -48,7 +49,7 @@ test_data = test_data.withColumn('year_declaration',substring(col("marketing_dec
 test_data = test_data.withColumn('time_authorization', col("year_declaration") - col("year_authorization"))
 test_data = test_data.withColumn('time', now.year - col("year_authorization"))
 
-# feature engineering, donde añado los campos que se quiere que hagan la prediccion un poco mas precisa
+# feature engineering, donde añado los variables a analizar para que la prediccion sea poco mas precisa
 fe_field = ["marketing_authorization_date", "label_plaquette" , "label_ampoule" , "label_flacon" , "label_tube" , "label_stylo" , "label_seringue" , "label_pilulier" , "label_sachet" , "label_comprime" , "label_gelule" , "label_film" , "label_poche" , "label_capsule" , "count_plaquette" , "count_ampoule" , "count_flacon" , "count_tube" , "count_stylo" , "count_seringue" , "count_pilulier" , "count_sachet" , "count_comprime" , "count_gelule" , "count_film" , "count_poche" , "count_capsule" , "count_ml"] 
 
 # 1. Se crea un vectorAssembler que combina varias columnas utilizando la variable fe_field y se especifica la salida 'feature'
