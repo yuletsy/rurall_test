@@ -37,7 +37,7 @@ Es una técnica que me permitio predecir los precios, para modelar la relación 
 
 ## 3 . Una descripción del rendimiento en general de el(los) algoritmo(s)
 
-Con respecto al rendimiento, en las primeras predicciones los valores eran muy muy altos, entonces loq que se hizo fue tomas mas variables y datos para llegar a una prediccion mas acertada, el comportamiento.
+Con respecto al rendimiento, en las primeras predicciones los valores eran muy muy altos, entonces loq que se hizo fue tomas mas variables y datos para llegar a una prediccion mas acertada, el comportamiento. Cuando se añadieron mas variables y se ajusto el modelo, el porcentaje de error disminuto considerablemente, dando a entender que el algoritmo de regresión estaba funcionando para hacer la prediccion respectiva.
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------
 Entorno WIndows
