@@ -1,4 +1,4 @@
-# BY: YULETSY PAOLA PABON --- 2023 -- MARZO
+# BY: YULETSY PAOLA PABON --- 2023 --
 # se importan los paquetes necesarios para la regresión lineal
 import pyspark
 import datetime
@@ -8,7 +8,7 @@ from pyspark.ml.regression import LinearRegression
 from pyspark.sql.functions import substring,col
 import matplotlib.pyplot as plt
 from pyspark.ml.evaluation import RegressionEvaluator
-
+import numpy as np
 # se crea un instancia de sesion de pyspark
 spark = SparkSession.builder.appName("Drugs").getOrCreate()
 
@@ -79,20 +79,16 @@ resul_csv = resul.select('drug_id', 'prediction').toPandas()
 # se crea el archivo csv y se muestra la variable 'resul'
 resul_csv.to_csv("price_prediction.csv", index=False)
 
-# evaluator = RegressionEvaluator(metricName="mse")
-# mse = evaluator.evaluate(test03)
-# print("MSE: ", mse)
-# Se hace la visualizacion de los resultados en un grafico 
 
-# features_array = np.array(test03_format["features"].tolist()) 
-# plt.scatter(test03_format["drug_id"], features_array, color="gray")
-# plt.plot(resul_csv["drug_id"], resul_csv['prediction'], color='red', linewidth=2)
-# plt.xlabel("Features")
-# plt.ylabel("Price")
-# plt.legend(["real valeues", "predictions"])
-# plt.title("Prediction vs real values")
-# plt.show()
 
+evaluator = RegressionEvaluator( labelCol="label", predictionCol="prediction", metricName="rmse")
+rmse = evaluator.evaluate(test03)
+print("RMSE: ",rmse)
+
+
+evaluator1 = RegressionEvaluator( labelCol="label",predictionCol="prediction", metricName="mae")
+rme = evaluator1.evaluate(test03)
+print("RME: " , rme)
 
 
 
